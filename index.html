@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Taxa Metabólica Basal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Taxa Metabólica Basal</h1>
+    <label for="sexo">Sexo:</label> <!-- Rótulos de cada campo -->
+    <select id="sexo"> <!-- Menu suspenso selecionável -->
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+    </select><br>
+    <label for="idade">Idade:</label> 
+    <input type="number" id="idade"><br> <!-- Aceita os dados numéricos do usuário -->
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso"><br>
+    <label for="altura">Altura (cm):</label>
+    <input type="number" id="altura"><br>
+    <label for="nivelAtividade">Nível de atividade:</label>
+    <select id="nivelAtividade">
+        <option value="sedentario">Sedentário</option>
+        <option value="leve"> Atividade Leve (1-2 dias/semana)</option>
+        <option value="moderado"> Atividade Moderada (3-5 dias/semana)</option>
+        <option value="ativo"> Atividade Pesada (6-7 dias/semana)</option>
+    </select><br>
+    <label for="meta">Meta:</label>
+    <select id="meta">
+        <option value="ganharMassa">Ganhar Massa</option>
+        <option value="perderGordura">Perder Gordura</option>
+    </select><br>
+    <button onclick="calcularTaxaMetabolica()">Calcular</button> <!-- Chama uma função JavaScript chamada 'calcularTaxaMetabolica()'. -->
+    <div id="resultado"></div> <!-- Exibe o resultado do cálculo da taxa metabólica -->
+    <img src="noname.png" id="noname-left" alt="noname-left"> <!-- Imagens esquerda e direita -->
+    <img src="noname.png" id="noname-right" alt="noname-right">
+
+    <script src="script.js"></script>
+</body>
+</html>

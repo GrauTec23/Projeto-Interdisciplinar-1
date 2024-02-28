@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+label { /* Rótulos de preenchimento de dados*/
+    display: block;
+    margin-bottom: 3px;
+}
+
+input[type="number"], /* Campos de entrada numérica e seleção */
+select {
+    width: 65%;
+    padding: 5px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 65%;
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+#resultado {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#noname-left { /* Imagem do lado esquerdo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 175px; 
+    height: 100%; 
+    background-image: url('noname.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    z-index: 9999; 
+}
+
+#noname-right { /* Imagem do lado direito */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 175px; 
+    height: 100%; 
+    background-image: url('noname.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    z-index: 9999; 
+}
